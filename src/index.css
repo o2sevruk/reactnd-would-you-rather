@@ -59,14 +59,10 @@ li {
 }
 
 /* Hacky but less typing in the video */
-.question-info > div > span:first-child {
+.question-info > p > strong {
     font-weight: bold;
     margin-right: 5px;
-}
-
-.question-info > div > span:nth-child(2) {
-    color: #aaa;
-    font-size: 16px;
+    margin-left: 5px;
 }
 
 .question-info > div > div {
@@ -138,7 +134,14 @@ li {
 }
 
 .card {
+  	border-color: #9575CD;
     border-radius: 0;
+}
+
+.card-header {
+    background-color: #9575CD;
+    border-color: #9575CD;
+    color: #fff;
 }
 
 .card-body {
@@ -251,10 +254,14 @@ li {
 }
 
 .chosen-answer {
-    background-color: #9575CD;
+    background-color: rgba(149, 117, 205, 0.2);
     border: 2px solid #9575CD;
-    color: #9575CD !important;
+    color: #000 !important;
     font-weight: bold;
+}
+
+.chosen-answer .progress {
+    background-color: #fff;
 }
 
 .results-header {
